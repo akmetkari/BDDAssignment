@@ -1,3 +1,4 @@
+
 Feature: Create new Account
   
   Scenario Outline: Create New Account 
@@ -7,6 +8,6 @@ Feature: Create new Account
     And user clicks on the create new account button 
     Then user should see a message account created successfully
  
- Examples: 
+ 	Examples: 
  	|Firstname       |Lastname        |Email 								|Password 			|ConfirmPassword  	  |
- 	|Akshay					 |Metkari					|akmetkari@gmail.com	|Hello@abc			|Hello@abc						|
+ 	|Akshay					 |Metkari					|akaei@gmail.com	    |Hello@abc			|Hello@abc						|

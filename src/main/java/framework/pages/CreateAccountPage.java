@@ -44,13 +44,19 @@ public class CreateAccountPage {
 		lastNameField.sendKeys(lastName);
 	}
 
-	public MyAccountsPage fillSignInInformationDetails(String email,String password,String confirmPassword) {
+	public void fillSignInInformationDetails(String email,String password,String confirmPassword) {
 		emailField.sendKeys(email);
 		passwordField.sendKeys(password);
-		passwordConfirmField.sendKeys(confirmPassword,Keys.TAB,Keys.RETURN);
+		passwordConfirmField.sendKeys(confirmPassword);
+		
+		
+	}
+
+	public MyAccountsPage clickOnCreateNewAccountButton() {
+
+		passwordConfirmField.sendKeys("",Keys.TAB,Keys.ENTER);
 		myAccountsPage = new MyAccountsPage(driver);
 		return myAccountsPage;
-		
 	}
 	
 	

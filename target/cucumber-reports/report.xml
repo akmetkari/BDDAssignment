@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="0.317" tests="2" skipped="0" failures="0" errors="0">
-<testcase classname="Create new Account" name="Create New Account - #1.1" time="0.017">
+<testsuite name="Cucumber" time="32.543" tests="2" skipped="0" failures="1" errors="0">
+<testcase classname="Create new Account" name="Create New Account - #1.1" time="16.181">
+<failure type="java.lang.AssertionError" message="Account Not created expected [true] but found [false]">
+<![CDATA[java.lang.AssertionError: Account Not created expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepDefinations.CreateNewAccountSteps.user_should_see_a_message_account_created_successfully(CreateNewAccountSteps.java:56)
+	at ✽.user should see a message account created successfully(file:///D:/Learning/New%20Workspace/BDDAssignment/src/test/resources/Features/CreateNewAccount.feature:9)
+]]>
+</failure>
 <system-out><![CDATA[
 Given user is present on the create new account page........................passed
 When user enters Akshay Metkari in correct format...........................passed
-When user enter akmetkari@gmail.com Hello@abc and Hello@abc.................passed
+When user enter akaei@gmail.com Hello@abc and Hello@abc.....................passed
 And user clicks on the create new account button............................passed
-Then user should see a message account created successfully.................passed
+Then user should see a message account created successfully.................failed
 ]]></system-out>
 </testcase>
-<testcase classname="user login to the application" name="user login to the application - #1.1" time="0.004">
+<testcase classname="user login to the application" name="user login to the application - #1.1" time="16.022">
 <system-out><![CDATA[
 Given user is on the landing page of the application........................passed
-When user provides correct akshay312@gmail.com and Hello@abc................passed
+When user provides correct akmei@gmail.com and Hello@abc....................passed
 And clicks on the login button..............................................passed
 Then user should see Success login message..................................passed
 ]]></system-out>

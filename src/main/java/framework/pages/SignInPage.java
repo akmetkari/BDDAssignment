@@ -25,10 +25,15 @@ public class SignInPage {
 	@FindBy(xpath="//button[type='submit']")
 	WebElement submitButton;
 	
-	public HomePage enterDetails(String userName, String password) {
+	public void enterDetails(String userName, String password) {
 
 		emailIDField.sendKeys(userName);
-		passwordField.sendKeys(password,Keys.TAB,Keys.ENTER);
+		passwordField.sendKeys(password);
+	}
+
+	public HomePage clickOnLoginButton() {
+
+		passwordField.sendKeys("",Keys.TAB,Keys.ENTER);
 		homePage = new HomePage(driver);
 		return homePage;
 	}

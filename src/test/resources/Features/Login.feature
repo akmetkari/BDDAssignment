@@ -9,4 +9,4 @@ Feature: user login to the application
 
     Examples:
     |Username                |Password         |Result    |
-    |akshay312@gmail.com		 |Hello@abc				 |Success   | 
+    |akmei@gmail.com				 |Hello@abc				 |Success   | 
