@@ -2,26 +2,26 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-18T23:34:15 IST" name="Default suite" finished-at="2024-12-18T23:34:48 IST" duration-ms="33701">
+  <suite started-at="2024-12-21T23:22:54 IST" name="Default suite" finished-at="2024-12-21T23:23:17 IST" duration-ms="22172">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:stepDefinations.TestRunner@31ea9581]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:stepDefinations.TestRunner@5dda768f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-12-18T23:34:15 IST" name="Default test" finished-at="2024-12-18T23:34:48 IST" duration-ms="33701">
+    <test started-at="2024-12-21T23:22:54 IST" name="Default test" finished-at="2024-12-21T23:23:17 IST" duration-ms="22172">
       <class name="stepDefinations.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:stepDefinations.TestRunner@31ea9581]" started-at="2024-12-18T23:34:15 IST" name="setUpClass" finished-at="2024-12-18T23:34:16 IST" duration-ms="1150" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:stepDefinations.TestRunner@5dda768f]" started-at="2024-12-21T23:22:55 IST" name="setUpClass" finished-at="2024-12-21T23:22:55 IST" duration-ms="905" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7343922c]]>
+                <![CDATA[org.testng.TestRunner@459b187a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:stepDefinations.TestRunner@31ea9581]" started-at="2024-12-18T23:34:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-12-18T23:34:32 IST" duration-ms="16311" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:stepDefinations.TestRunner@5dda768f]" started-at="2024-12-21T23:22:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-12-21T23:23:06 IST" duration-ms="10771" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -43,7 +43,7 @@
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertTrue(Assert.java:57)
-at stepDefinations.CreateNewAccountSteps.user_should_see_a_message_account_created_successfully(CreateNewAccountSteps.java:56)
+at stepDefinations.CreateNewAccountSteps.user_should_see_a_message_account_created_successfully(CreateNewAccountSteps.java:55)
 at ✽.user should see a message account created successfully(file:///D:/Learning/New%20Workspace/BDDAssignment/src/test/resources/Features/CreateNewAccount.feature:9)
 ]]>
             </full-stacktrace>
@@ -51,7 +51,7 @@ at ✽.user should see a message account created successfully(file:///D:/Learnin
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:stepDefinations.TestRunner@31ea9581]" started-at="2024-12-18T23:34:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-12-18T23:34:48 IST" duration-ms="16032" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:stepDefinations.TestRunner@5dda768f]" started-at="2024-12-21T23:23:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-12-21T23:23:17 IST" duration-ms="10310" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -67,7 +67,7 @@ at ✽.user should see a message account created successfully(file:///D:/Learnin
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:stepDefinations.TestRunner@31ea9581]" started-at="2024-12-18T23:34:48 IST" name="tearDownClass" finished-at="2024-12-18T23:34:48 IST" duration-ms="130" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:stepDefinations.TestRunner@5dda768f]" started-at="2024-12-21T23:23:17 IST" name="tearDownClass" finished-at="2024-12-21T23:23:17 IST" duration-ms="105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

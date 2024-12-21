@@ -16,15 +16,14 @@ public class CreateNewAccountSteps
 	LandingPage landingPage;
 	CreateAccountPage createAccountPage;
 	MyAccountsPage myAccountPage;
-	public CreateNewAccountSteps()
-	{
-		driver = DriverFactory.getDriver();
 	
-	}
+	
 	
 	@Given("user is present on the create new account page")
 	public void user_is_present_on_the_create_new_account_page() {
-
+		
+		System.out.println("Create New Account step 1st...");
+		driver = DriverFactory.returnDriver();
 		landingPage = new LandingPage(driver);
 		createAccountPage = landingPage.moveToCreateAccountPage();
 		
@@ -32,7 +31,7 @@ public class CreateNewAccountSteps
 
 	@When("^user enters (.*) (.*) in correct format$")
 	public void user_enters_firstname_lastname_in_correct_format(String FirstName, String LastName) {
-		
+		System.out.println("Create New Account step 2nd..............");
 		createAccountPage.fillPersonalDetails(FirstName, LastName);
 	}
 

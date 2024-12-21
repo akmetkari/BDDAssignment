@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions
 (
         features = "src/test/resources/Features/", 
-        glue = {"stepDefinations","hooks"},         
+        glue = {"stepDefinations","hooks"},   
         dryRun = false, // Set to true to get a list of undefined steps without executing
         monochrome = true, // Display console output in black and white for better readability
         plugin = {"pretty", "html:target/cucumber-reports/report.html", 

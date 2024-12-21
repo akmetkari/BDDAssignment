@@ -10,4 +10,4 @@ Feature: Create new Account
  
  	Examples: 
  	|Firstname       |Lastname        |Email 								|Password 			|ConfirmPassword  	  |
- 	|Akshay					 |Metkari					|akaei@gmail.com	    |Hello@abc			|Hello@abc						|
+ 	|Akshay					 |Metkari					|akssei@gmail.com	    |Hello@abc			|Hello@abc						|

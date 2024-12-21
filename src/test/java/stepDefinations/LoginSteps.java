@@ -17,15 +17,9 @@ public class LoginSteps
 	SignInPage signInPage;
 	HomePage homePage;
 	
-	public LoginSteps()
-	{
-		driver = DriverFactory.getDriver();
-	}
-	
-	
 	@Given("user is on the landing page of the application")
 	public void user_is_on_the_landing_page_of_the_application() {
-		
+		driver = DriverFactory.returnDriver();
 		landingPage = new LandingPage(driver);
 	}
 

@@ -1,7 +1,6 @@
 package hooks;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -13,10 +12,10 @@ public class Hooks
 		
 	 
 	 
-	@Before(order=0)
+	@Before
 	public void setup()
 	{
-		driver = DriverFactory.getDriver();
+		driver = DriverFactory.InitilizeDriver();
 		
 	}
 	

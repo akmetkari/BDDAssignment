@@ -2,30 +2,46 @@ package stepDefinations;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 
-public class DriverFactory 
-{
+import framework.utility.ConfigReader;
 
-	 private static WebDriver driver;
+public class DriverFactory {
+
+	private static WebDriver driver;
 	
-	    public static WebDriver getDriver() 
-	    {
-	        
-	            driver = new ChromeDriver(); 
-	            
-	            driver.manage().window().maximize(); 
-	            driver.get("https://magento.softwaretestingboard.com/");
-	        
-	        return driver;
-	    }
+	static String browser = ConfigReader.getProperty("browser");
+	static String url = ConfigReader.getProperty("appURL");
+
+	public static WebDriver InitilizeDriver() 
+	{
+		if (browser.equalsIgnoreCase("chrome")) {
+			driver = new ChromeDriver();
+			driver.manage().window().maximize();
+			driver.get(url);
+			
+		}
+		else 
+		{
+			driver = new EdgeDriver();
+			driver.manage().window().maximize();
+			driver.get(url);
+		}
+
+		return driver;
+	}
+
+	public static void quitDriver() {
+		if (driver != null) {
+			driver.quit();
+			driver = null;
+		}
+	}
 	
-	    public static void quitDriver() 
-	    {
-	        if (driver != null) 
-	        {
-	            driver.quit();
-	            driver = null;
-	        }
-	    }
 	
+	public static WebDriver returnDriver()
+	{
+		return driver;
+	}
+
 }
