@@ -20,7 +20,7 @@ public class ConfigReader {
 		} 
 		catch(IOException e) {
 		
-			Reporter.log("LOG:FAIL - Unable to load config file "+e.getMessage());
+			
 			
 		}
 		

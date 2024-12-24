@@ -9,9 +9,6 @@ import stepDefinations.DriverFactory;
 public class Hooks 
 {
 	 private static WebDriver driver;
-		
-	 
-	 
 	@Before
 	public void setup()
 	{

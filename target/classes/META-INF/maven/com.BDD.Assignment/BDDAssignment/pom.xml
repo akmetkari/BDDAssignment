@@ -3,7 +3,10 @@
   <groupId>com.BDD.Assignment</groupId>
   <artifactId>BDDAssignment</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
   <build>
+ 
+  
     <plugins>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
